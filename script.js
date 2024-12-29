@@ -12,3 +12,9 @@
   alert(`Logged in as ${username}`);
  toggleExistingUserButton();
 });
+document.getElementById('existing').addEventListener('click', function() {
+  const username = localStorage.getItem('username');
+  alert(`Logged in as ${username}`);
+}); window.onload = function() {
+  toggleExistingUserButton();
+};
